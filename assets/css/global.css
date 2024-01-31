@@ -5,6 +5,9 @@
 
 body {
     background-color: #f6f8fc;
+    background: url(../img/5108356.jpg) repeat-y;
+   
+ 
 }
 
 .content {
@@ -12,6 +15,9 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    background: url(../img/5108356.jpg) repeat-y ;
+    
+    
 }
 
 @media screen and (min-width: 992px) {

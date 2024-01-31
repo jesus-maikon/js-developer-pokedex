@@ -1,7 +1,7 @@
 # Trilha JS Developer - Pokedex
 
-teste de modificação
+<h1>projeto minha pokedex dio</h1>
 
-outra modificação
+<p>aprendendo a fazer requisições de uma API..</p>
 
-outra alteração
+<img src="./assets/img/img_projeto.png">

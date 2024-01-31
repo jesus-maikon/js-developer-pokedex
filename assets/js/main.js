@@ -1,8 +1,10 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
+
+
 const maxRecords = 151
-const limit = 10
+const limit = 12
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
@@ -10,6 +12,7 @@ function convertPokemonToLi(pokemon) {
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
+            
 
             <div class="detail">
                 <ol class="types">
@@ -18,10 +21,46 @@ function convertPokemonToLi(pokemon) {
 
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
+
+                     
             </div>
+            <div class="pokeMaisDetalhes">
+
+                    <h4 class="aboutH4">about</h4>
+                     <p class="aboutPokemon">${pokemon.about}</p>
+                
+
+                <div>
+                     <ol class="configLoDetalhePoke">
+                     
+                             <li><span>hp ${pokemon.hp}</span></li>
+                            <li><span>atk ${pokemon.atk}</span></li>
+                             <li><span>satk ${pokemon.satk}</span></li>
+                             <li><span>def ${pokemon.def}</span></li>
+                             <li><span>sdef ${pokemon.sdef}</span></li>
+                            <li><span>spd ${pokemon.spd}</span></li>
+       
+                      </ol>
+                </div>
+					
+                    
+                    
+                    
+  
+            </div>          
+           
+      
+            
         </li>
+        
     `
+
 }
+
+
+
+
+
 
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
